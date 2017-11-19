@@ -1,6 +1,5 @@
 @charset "UTF-8";
-
-/* company-header */
+/* ---------------- company-header ---------------- */
 
 .company-heading-wrapper {
   position: relative;
@@ -21,4 +20,87 @@
 .company-heading-wrapper .company-heading-inner>h2 {
   color: white;
   font-size: 30px;
+}
+
+/* ---------------- company-slider ---------------- */
+
+.company-slider {
+  width: 100%;
+  height: 320px;
+}
+
+.company-slider .company-slider-inner {
+  width: 1100px;
+  height: 320px;
+  margin: auto;
+}
+
+.company-slider .company-slider-inner .company-slider-view {
+  width: 830px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.company-slider-view ul {
+  width: 10000px;
+}
+
+.company-slider-view ul li {
+  width: 830px;
+  height: 320px;
+  float: left;
+}
+
+.company-slider-view ul li:nth-child(1) {
+  background-image: url('../images/company/1.jpg');
+}
+
+.company-slider-view ul li:nth-child(2) {
+  background-image: url('../images/company/2.jpg');
+}
+
+.company-slider-view ul li:nth-child(3) {
+  background-image: url('../images/company/3.jpg');
+}
+
+.company-slider-view ul li:nth-child(4) {
+  background-image: url('../images/company/4.jpg');
+}
+.company-slider-view ul li:nth-child(5) {
+  background-image: url('../images/company/5.jpg');
+}
+.company-slider-view ul li:nth-child(6) {
+  background-image: url('../images/company/6.jpg');
+}
+.company-slider-view ul li:nth-child(7) {
+  background-image: url('../images/company/7.jpg');
+}
+
+.company-slider-controler {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 42%;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.company-slider-controler>span {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: block;
+  border: solid black 1px;
+  text-align: center;
+  text-indent: 9999px;
+}
+
+.company-slider-controler .control-prev {
+  float: left;
+}
+
+.company-slider-controler .control-next {
+  float: right
 }
