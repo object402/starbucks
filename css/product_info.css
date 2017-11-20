@@ -1,15 +1,13 @@
-a {
-  color: #000;
-  text-decoration: none;
-}
+a {color: #000;text-decoration: none;}
 
+/*div #제품 인포메이션 wrap*/
 #product_info {
   width: 1100px;
   margin: auto;
+  padding-bottom: 50px;
 }
 
-/*제품 미니 네비게이션*/
-
+/*div 미니 네비게이션*/
 .pd_info_top {
   width: 100%;
 }
@@ -41,7 +39,7 @@ a {
 
 .pd_info_top_ul li a {}
 
-/*product_info_content*/
+/*div 제품 정보 시작*/
 
 .product_info_content::after {
   content: "";
@@ -49,7 +47,7 @@ a {
   clear: both;
 }
 
-/*제품 이미지*/
+/*div 제품 이미지*/
 .pd_info_images {width: 45%;float: left;}
 
 /*썸네일 메인 이미지 3장*/
@@ -96,14 +94,12 @@ a {
   margin-right: 4px;
 }
 
-/*제품 텍스트 인포메이션*/
+/*div 제품명과 설명*/
 
 .pd_info_txt {
   width: 50%;
   float: right;
 }
-
-/*제품 텍스트 인포메이션 - 제품이름 & 나만의 음료 등록*/
 
 .pd_name_kor {
   font-size: 24px;
@@ -143,7 +139,7 @@ a {
   margin: 20px 0;
 }
 
-/*제품 텍스트 인포메이션 - head 영양정보*/
+/*div 제품영양 정보 - head 영양정보*/
 
 .pd_info_nutrition_head {
   width: 100%;
@@ -169,7 +165,7 @@ a {
   float: right;
 }
 
-/*제품 텍스트 인포메이션 - body 정보 리스트*/
+/*div 제품영양 정보 - body 정보 리스트*/
 
 .pd_info_nutrition_body {
   width: 100%;
@@ -228,7 +224,7 @@ a {
   float: right;
 }
 
-/*제품 텍스트 인포메이션 - footer 음료설명*/
+/*div 제품영양 정보 - footer 음료설명*/
 
 .pd_info_nutrition_footer {
   width: 100%;
@@ -245,3 +241,76 @@ a {
   height: 1px;
   background: #bebebe;
 }
+
+/*div 제품 더보기 */
+.pd_info_more{
+  width:100%;
+  background-color: #f4f4f2;
+}
+/*프로모션 새소식 - title*/
+.pd_info_title{
+  width:1100px; margin:auto;
+}
+.pd_info_title::after{content:""; display: block; clear:both;}
+.pd_info_title .pd_promo{
+  padding:20px;
+  width:45%; float:left;
+  display: inline-block;
+  position: relative;
+}
+.pd_info_title .pd_siren_order{
+  width:45%; float:right;
+  display: inline-block;
+  padding:20px;
+}
+/*프로모션 새소식 - title 프로모션 새소식*/
+.pd_promo .pd_promo_h2{
+  font-size: 20px; font-weight: bold;
+  padding:15px 0;
+}
+.pd_promo > p {
+  font-size:14px;
+  display: inline-block;
+}
+.pd_promo > a{
+  display: inline-block;
+  position: absolute;
+  top:5; right:0;
+}
+/*프로모션 새소식 - title 사이렌오더란?*/
+.pd_siren_order .pd_siren_order_h2{
+  width:60%;
+  float:right;
+  font-size: 20px; font-weight: bold;
+  padding:15px 0;
+}
+.pd_siren_order img{
+  float:left;
+  width:34%;
+}
+.pd_siren_order p{
+  width:60%;
+  float:right;
+  font-size:14px;
+  line-height: 20px;
+}
+/*관련제품*/
+.pd_relation{width:1100px; margin:auto;padding-bottom:50px;}
+.pd_relation::after{content:""; display: block; clear:both;}
+.pd_relation .pd_relation_h2{
+  font-size: 20px; font-weight: bold;
+  padding:15px 0;
+}
+.pd_relation .pd_relation_list{
+  width:33.3333333333333333333333%;
+  float:left;
+  margin-left:10px;
+}
+.pd_relation_list .pd_relation_list_img{width:40%; display: inline-block;}
+.pd_relation_list .pd_relation_list_txt{
+  width:56%; float:right; display:inline-block;
+  font-size:14px;
+  line-height: 20px;
+}
+.pd_list_title{font-size:18px; font-weight: bold; margin-bottom:20px;}
+.pd_relation_list .detail_view{float:right; margin-right:30px;}
