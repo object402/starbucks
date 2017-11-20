@@ -321,13 +321,13 @@ img.season_tag3 {
   border-radius: 3px;
   transition: 0.5s;
 }
-.pick_your_favorit_left .pick_title ul li a span:after{
-  content:"";
-  display: block;
-  height:0;
-  width:0;
-  display: none;
 
+.pick_your_favorit_left .pick_title ul li a span:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  display: none;
 }
 
 .pick_your_favorit_left .pick_title ul li a span:hover {
@@ -349,43 +349,61 @@ img.season_tag3 {
   height: 590px;
   background-color: #00b050;
 }
-.reserved_store_wrap>img{
-  width:100%;
-}
-.reserved_move a:first-child img{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-.reserved_move a:last-child img{
-  display: none;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
+
+.reserved_store_wrap>img {
+  width: 100%;
 }
 
+.reserved_move a:first-child img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reserved_move a:last-child img {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*section 8*/
 
 .section_8 {
-  position:relative;
+  position: relative;
   height: 400px;
 }
 
-.store_find_wrap>img{
-  width:100%;
+.store_find_wrap>img {
+  width: 100%;
+  height: 400px;
 }
 
-.coffee_bg{
+/*.coffee_bg>img{
   position:absolute;
-  top:0;
-  left:0;
+  top:0%;
+  left:0%;
 
+}*/
+.store_find_left{
+  position: absolute;
+  left:0%;
+}
+.store_find_left1 {
+  position: absolute;
+  top: 36%;
+  left: 43%;
 }
 
+.store_find_left2 {
+  position: absolute;
+  top: 0%;
+  left: 26%;
+  z-index:1000;
+}
 
-.store_find_right{
-  position:absolute;
+.store_find_right {
+  position: absolute;
 }
