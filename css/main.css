@@ -387,23 +387,49 @@ img.season_tag3 {
   left:0%;
 
 }*/
-.store_find_left{
-  position: absolute;
-  left:0%;
-}
 .store_find_left1 {
   position: absolute;
   top: 36%;
-  left: 43%;
+  left: 37%;
+  z-index:1000;
 }
 
 .store_find_left2 {
   position: absolute;
   top: 0%;
-  left: 26%;
-  z-index:1000;
+  left:21%;
+  z-index:1;
 }
 
 .store_find_right {
   position: absolute;
+  top:20%;
+  right:21%;
+}
+
+.store_find_right ul li a:first-child img{
+  margin-bottom:20px;
+}
+
+.store_find_right ul li a span{
+  margin-left:10px;
+  display: block;
+  width:120px;
+  height:34px;
+  line-height: 34px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  color:#000;
+  text-align: center;
+  transition: 0.5s;
+
+}
+.store_find_right ul li a span:hover{
+  color:#fff;
+  background-color: #000;
+}
+.ilustration_store{
+  position:absolute;
+  bottom:0%;
+  right:15%;
 }
