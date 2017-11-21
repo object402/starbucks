@@ -64,8 +64,8 @@ function section_6(){
   $(window).scroll(function(){
     var pos = $('.section_6').offset().top;
     var top = $(window).scrollTop();
-    if(pos>=top+1500){
-  $('.pick_title').css({"opacity":'0',"left":'-100px'}).delay(3000).animate({"opacity":'1',"left":'23%'},1500);
+    if(pos>=top+1600){
+  $('.pick_title').css({"opacity":'0',"left":'-100px'}).delay(4000).animate({"opacity":'1',"left":'23%'},1500);
     }
   })
 
@@ -76,7 +76,7 @@ function section_8(){
   $(window).scroll(function(){
     var pos = $('.section_8').offset().top;
     var top = $(window).scrollTop();
-    if(pos>=top+1600){
+    if(pos>=top+1700){
 
         $('.store_find_left img').css({"opacity":'0'}).delay(3000).animate({"opacity":'1'},2000);
 
