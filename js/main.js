@@ -2,13 +2,13 @@
 $(function(){
   // animation
   section_1();
+  // section_2();
+  // section_3();
   section_4();
   section_5();
+  section_6()
   // section_7();
   section_8();
-
-
-
 })
 
 
@@ -47,16 +47,8 @@ function section_5(){
 }
 
 function section_6(){
-
+  $('.pick_title').css({"opacity":'0',"left":'-100px'}).delay(1000).animate({"opacity":'1',"left":'23%'},1500);
 }
-
-// function section_7(){
-//
-// }
-//
-
-// function section_2{}
-// function section_3{}
 
 
 function section_8(){
@@ -65,3 +57,8 @@ function section_8(){
 
     $('.store_find_right').css({"opacity":'0',"right":'-21%'}).delay(1500).animate({"opacity":'1',"right":'21%'},1500);
 }
+
+
+// function section_7(){}
+// function section_2(){}
+// function section_3(){}
