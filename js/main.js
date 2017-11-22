@@ -2,7 +2,7 @@
 $(function(){
   // animation
   section_1();
-  // section_2();
+  section_2();
   // section_3();
   section_4();
   section_5();
@@ -27,13 +27,23 @@ function section_1(){
 
 }
 
+function section_2(){
+$(this).removeClass('active');
+    $('.notice').click(function(){
+        $('.promotion_slide').stop().slideToggle();
+        $(this).toggleClass('active');
+
+        return false;
+
+    })
+}
 
 function section_4(){
   $(window).scroll(function(){
     var pos = $('.section_4').offset().top;
     var top = $(window).scrollTop();
     if(pos>=top+600){
-      $('.christmas_left img').css({"opacity":'0',"left":'-100px'}).delay(1000).animate({"opacity":'1',"left":'21%'},1500);
+      $('.christmas_left img').css({"opacity":'0',"left":'0px'}).delay(1000).animate({"opacity":'1',"left":'21%'},1500);
 
 
       $(".christmas_right1 a img").css({"opacity":'0',"right":"-100px"}).delay(1000).animate({"opacity":'1',"right":'39%'},1500);
@@ -76,11 +86,11 @@ function section_8(){
   $(window).scroll(function(){
     var pos = $('.section_8').offset().top;
     var top = $(window).scrollTop();
-    if(pos>=top+1700){
+    if(pos>=top+1800){
+          console.log(top);
+        $('.store_find_left img').css({"opacity":'0'}).delay(4000).animate({"opacity":'1'},2000);
 
-        $('.store_find_left img').css({"opacity":'0'}).delay(3000).animate({"opacity":'1'},2000);
-
-          $('.store_find_right').css({"opacity":'0',"right":'-21%'}).delay(3000).animate({"opacity":'1',"right":'21%'},2000);
+          $('.store_find_right').css({"opacity":'0',"right":'0px'}).delay(4000).animate({"opacity":'1',"right":'21%'},2000);
     }
   })
 

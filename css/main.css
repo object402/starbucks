@@ -1,8 +1,9 @@
 @charset "utf-8";
 /*  e_frequency fixed content */
-.main_wrap{
-  width:100%;
-  height:100%;
+
+.main_wrap {
+  width: 100%;
+  height: 100%;
 }
 
 .e_frequency {
@@ -20,6 +21,7 @@
 /*section 1*/
 
 /*display none*/
+
 /*.product1,.product2,.product3{
   display: none;
 }*/
@@ -131,25 +133,127 @@ img.season_tag3 {
 /*section 2*/
 
 .section_2 {
+  position: relative;
   width: 100%;
   height: 62px;
 }
 
 /*left*/
 
-.section_2 .left_notice {}
+.left_notice {
+  position: relative;
+  width: 56%;
+  height: 62px;
+  background: #000;
+}
+
+.left_notice dl {
+  position: absolute;
+  left: 48%;
+  top: 28%;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.left_notice ul li a span {
+  color: #fff;
+}
+
+.left_notice ul li a span:hover {
+  text-decoration: underline;
+}
+
+img.notice_img {
+  position: absolute;
+  left: 39%;
+  top: 33%;
+}
+
+.notice_plus {
+  position: absolute;
+  right: 2%;
+  top: 21%;
+}
+
+.notice_plus img {
+  position: absolute;
+  right: 0;
+  width: 36px;
+  height: 36px;
+}
 
 /*right*/
 
-.section_2 .right_noice {}
-
-
-.promotion_view{
-  width:2000px;
-  height:
+.right_notice {
+  position: absolute;
+  left: 56%;
+  top: 0%;
+  width: 44%;
+  height: 62px;
+  background-color: #f6f5ef;
 }
-.promotion_container {
-  display: none;
+
+.right_notice .promotion_txt {
+  top: 33%;
+  left: 17%;
+  width: 127px;
+  height: 19px;
+  position: absolute;
+}
+
+.notice {
+  position: absolute;
+  display: block;
+  right: 48%;
+  top: 21%;
+  width:36px;
+  height:36px;
+  border-radius: 50%;
+  background-color: #fff;
+  background:url(../images/img/common/btn_prom_down.png) no-repeat;
+}
+.active{
+    background:url(../images/img/common/btn_prom_up.png) no-repeat;
+}
+
+
+
+/* hidden slide */
+
+.promotion_slide {
+  width: 100%;
+  height: 658px;
+  background-color: #f6f5ef;
+}
+
+.promotion_view {
+  position: relative;
+  top:9%;
+  width: 100%;
+  height: 600px;
+  background-color: red;
+  odverflow:hidden;
+}
+
+.promotion_view .promotion_container {
+  position: absolute;
+  width: 4996px;
+  height: 553px;
+  background: blue;
+}
+
+.promotion_view .promotion_container ul li {
+  display: block;
+  float: left;
+  width: 819px;
+  margin-left: 10px;
+}
+
+.promotion_view .promotion_container ul li a img {
+  display: block;
+  float: left;
+  margin-left: 10px;
 }
 
 /*section 3*/
@@ -214,7 +318,8 @@ img.season_tag3 {
   right: 39%;
   top: 30%;
 }
-.christmas_right1 img{
+
+.christmas_right1 img {
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -222,7 +327,7 @@ img.season_tag3 {
 .christmas_right3 a span {
   display: block;
   margin-left: 10px;
-  margin-top:20px;
+  margin-top: 20px;
   width: 120px;
   height: 34px;
   line-height: 34px;
@@ -303,11 +408,10 @@ img.season_tag3 {
   height: 755px;
 }
 
-.pick_your_favorit_wrap{
+.pick_your_favorit_wrap {
   width: 100%;
   height: 800px;
-  background:url(../images/img/main/fav_prod_bg_new.jpg) fixed no-repeat left top;
-
+  background: url(../images/img/main/fav_prod_bg_new.jpg) fixed no-repeat left top;
 }
 
 .pick_your_favorit_left .pick_title {
@@ -367,10 +471,10 @@ img.season_tag3 {
   background-color: #00b050;
 }
 
-.reserved_store_wrap{
-  width:100%;
-  height:590px;
-  background:url(../images/img/main/reserve_bg.jpg) center fixed no-repeat ;
+.reserved_store_wrap {
+  width: 100%;
+  height: 590px;
+  background: url(../images/img/main/reserve_bg.jpg) center fixed no-repeat;
   background-size: auto 100%;
 }
 
@@ -382,7 +486,6 @@ img.season_tag3 {
 }
 
 .reserved_move a:last-child img {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -407,49 +510,51 @@ img.season_tag3 {
   left:0%;
 
 }*/
+
 .store_find_left1 {
   position: absolute;
   top: 36%;
   left: 37%;
-  z-index:1000;
+  z-index: 1000;
 }
 
 .store_find_left2 {
   position: absolute;
   top: 0%;
-  left:21%;
-  z-index:1;
+  left: 21%;
+  z-index: 1;
 }
 
 .store_find_right {
   position: absolute;
-  top:20%;
-  right:21%;
+  top: 20%;
+  right: 21%;
 }
 
-.store_find_right ul li a:first-child img{
-  margin-bottom:20px;
+.store_find_right ul li a:first-child img {
+  margin-bottom: 20px;
 }
 
-.store_find_right ul li a span{
-  margin-left:10px;
+.store_find_right ul li a span {
+  margin-left: 10px;
   display: block;
-  width:120px;
-  height:34px;
+  width: 120px;
+  height: 34px;
   line-height: 34px;
   border: 2px solid #000;
   border-radius: 3px;
-  color:#000;
+  color: #000;
   text-align: center;
   transition: 0.5s;
-
 }
-.store_find_right ul li a span:hover{
-  color:#fff;
+
+.store_find_right ul li a span:hover {
+  color: #fff;
   background-color: #000;
 }
-.ilustration_store{
-  position:absolute;
-  bottom:0%;
-  right:15%;
+
+.ilustration_store {
+  position: absolute;
+  bottom: 0%;
+  right: 15%;
 }
