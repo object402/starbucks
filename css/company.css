@@ -1,11 +1,13 @@
 @charset "UTF-8";
 .company-wrap {
   position: relative;
+  overflow: hidden;
 }
 
 body {
   font-family: '나눔고딕';
 }
+
 
 /* ---------------- company-header ---------------- */
 
@@ -154,4 +156,271 @@ span.active-page {
   letter-spacing: -1px;
   text-decoration: none;
   color: black;
+}
+
+
+/* ---------------- company-campain ---------------- */
+
+.company-campain-wrap {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+
+.company-campain-box1 {
+  width: 1100px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.company-campain-box1>img {
+  display: block;
+}
+
+.company-campain-box1>strong {
+  font-size: 19px;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: bold;
+  font-family: '맑은 고딕';
+  color: #006633;
+  display: block;
+  padding: 30px 0 30px 0;
+  line-height: 1.4em;
+}
+
+.company-campain-box1>p {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.company-campain-box2 {
+  width: 100%;
+  height: 650px;
+  /* 수정수정 */
+  background: #f4f4f2;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.box2-title {
+  width: 1100px;
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.box2-chart {
+  width: 1100px;
+  margin: auto;
+}
+
+.box2-info {
+  width: 1100px;
+  margin: 50px auto;
+}
+
+.box2-info ul li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.yearlist {
+  width: 1100px;
+  height: 10px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.yearlist>ul {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.yearlist>ul>li {
+  float: left;
+  color: #666;
+  font-size: 12px;
+  margin-left: 25px;
+}
+
+.graph-area {
+  position: relative;
+  border-bottom: 2px solid #222;
+  margin-bottom: 20px;
+  /*overflow: hidden;*/
+}
+
+.graph-area ul li {
+  border-bottom: 1px solid #dddddd;
+  height: 46px;
+  position: relative;
+}
+
+.graph-area ul li span {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 68px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background: #f4f4f2;
+  font-size: 12px;
+  color: #666;
+  font-family: 'Arial';
+  text-align: right;
+}
+
+.year-bottom {
+  width: 1100px;
+  height: 12px;
+  position: relative;
+  border-bottom: 1px solid #dfdfdd;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.year-bottom ul {
+  width: 920px;
+  position: absolute;
+  right: 45px;
+  top: 0;
+}
+
+.year-bottom ul li {
+  float: left;
+  font-size: 12px;
+  color: #666666;
+  margin-right: 69px;
+  width: 40px;
+}
+
+.year-bottom ul li:last-child {
+  margin-right: 0;
+}
+
+.en {
+  font-size: 11px;
+}
+
+
+/* -------- graph stick ---------- */
+
+.graph-stick {
+  width: 1100px;
+  height: 282px;
+  position: absolute;
+  top: 0;
+}
+
+.graph-stick p {
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.graph-stick span {
+  display: block;
+  width: 42px;
+  height: inherit;
+  border-radius: 5px 5px 0 0;
+  margin: 0 auto;
+}
+
+.st1>span {
+  height: 52px;
+  background: #d7d2cb;
+}
+
+.st2>span {
+  height: 145px;
+  background: #e2d9c2;
+}
+
+.st3>span {
+  height: 149px;
+  background: #bd9b60;
+}
+
+.st4>span {
+  height: 151px;
+  background: #c6893f;
+}
+
+.st5>span {
+  height: 153px;
+  background: #9b704d;
+}
+
+.st6>span {
+  height: 157px;
+  background: #924c2e;
+}
+
+.st7>span {
+  height: 178px;
+  background: #744f28;
+}
+
+.st8>span {
+  height: 209px;
+  background: #4f2c1d;
+}
+
+.st9>span {
+  height: 204px;
+  background: #669900;
+}
+
+.graph-stick>div {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+}
+
+.st1 {
+  left: 116px;
+}
+
+.st2 {
+  /*height: 145px;*/
+  left: 223px;
+}
+
+.st3 {
+  /*height: 149px;*/
+  left: 332px;
+}
+
+.st4 {
+  /*height: 151px;*/
+  left: 440px;
+}
+
+.st5 {
+  /*height: 153px;*/
+  left: 550px;
+}
+
+.st6 {
+  /*height: 157px;*/
+  left: 659px;
+}
+
+.st7 {
+  /*height: 178px;*/
+  left: 764px;
+}
+
+.st8 {
+  /*height: 209px;*/
+  left: 877px;
+}
+
+.st9 {
+  /*height: 204px;*/
+  left: 985px;
 }
