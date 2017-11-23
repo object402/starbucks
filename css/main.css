@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*  e_frequency fixed content */
 
-.main_wrap {
+.all_wrap {
   width: 100%;
   height: 100%;
 }
@@ -11,7 +11,7 @@
   z-index: 9999;
   top: 20px;
   right: 20%;
-  /*display: none;*/
+  display: none;
 }
 
 .e_frequency img {
@@ -20,114 +20,132 @@
 
 /*section 1*/
 
-/*display none*/
-
-/*.product1,.product2,.product3{
-  display: none;
-}*/
-
 .section_1 {
-  width: 100%;
-  height: 646px;
-  backgroud: #00b050;
-}
-
-.top_main_wrap {
-  position: relative;
-  width: 100%;
-  height: 646px;
-}
-
-.top_main_wrap .main_bg {
-  width: 100%;
-  height: 646px;
-  display: block;
-}
-
-/*product1*/
-
-.season_product1>a>img {
-  top: -15px;
-  left: 37%;
-  position: absolute;
-  z-index: 1000;
-}
-
-img.season_tag1 {
-  position: absolute;
-  width: 230px;
-  left: 49%;
-  top: 5%;
-  z-index: 1;
-  display: block;
-}
-
-/*product 2*/
-
-.season_product2>a>img {
-  position: absolute;
-  top: 35%;
-  right: 20%;
-  z-index: 1000;
-}
-
-img.season_tag2 {
-  position: absolute;
-  width: 230px;
-  right: 26%;
-  bottom: 7%;
-  z-index: 1;
-}
-
-/*product 3*/
-
-.season_product3>a>img {
-  position: absolute;
-  left: 41%;
-  bottom: -38px;
-  z-index: 1000;
-}
-
-img.season_tag3 {
-  position: absolute;
-  width: 230px;
-  right: 41%;
-  bottom: 31%;
-  z-index: 1;
-}
-
-/*give good*/
-
-.givegood {
-  position: absolute;
-  bottom: 20%;
-  left: 22%;
-  text-align: center;
-}
-
-.givegood img {
-  text-align: center;
-  display: block;
-  height: 200px;
-}
-
-.givegood a span {
   margin: auto;
-  display: block;
-  border: 2px solid #d40f1a;
-  height: 34px;
-  width: 120px;
-  border-radius: 3px;
-  color: #d40f1a;
-  line-height: 34px;
-  transition: 0.5s;
-  text-align: center;
-  margin-top: 50px;
+  width: 100%;
+  height: 646px;
+  background: url(../images/img/main/17winter1/bev_bg.jpg) no-repeat;
+  background-position: center;
 }
 
-.givegood a span:hover {
+.main_wrap {
+  position: relative;
+  margin: auto;
+  width: 1280px;
+  height: inherit;
+  /*background: #000;*/
+  background:
+}
+
+.main_left {
+  float: left;
+  width: 25%;
+  height: inherit;
+  /*background: red;*/
+}
+
+.main_left a {
+  margin: auto;
+  margin-top: 150px;
+  display: block;
+  width: 300px;
+  height: 36px;
+  padding-top: 260px;
+  background: url(../images/img/main/17winter1/17_emblem.png) no-repeat;
+  background-position: center;
+  color: #d40f1a;
+}
+
+.main_left a span {
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  width: 120px;
+  line-height: 36px;
+  text-align: center;
+  height: 36px;
+  border: 2px solid #d40f1a;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.main_left a span:hover {
   background-color: #d40f1a;
   color: #fff;
+}
+
+.main_right {
+  position: relative;
+  float: right;
+  width: 75%;
+  height: inherit;
+}
+
+.product1 {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  width: 400px;
+  height: 400px;
+}
+
+.product1>a>img {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+}
+
+.product1 .season_tag1 {
+  position: absolute;
+  top: 54px;
+  left: 213px;
+  z-index: 1;
+}
+
+.product2 {
+  position: absolute;
+  top: 230px;
+  right: 10px;
+  width: 400px;
+}
+
+.product2>a>img {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+}
+
+.product2 .season_tag2 {
+  position: absolute;
+  top: 208px;
+  left: 2px;
+  z-index: 1;
+}
+
+.product3 {
+  position: absolute;
+  top: 336px;
+  left: 134px;
+  width: 400px;
+}
+
+.product3>a>img {
+  position: absolute;
+  display: block;
+  z-index: 1000;
+}
+
+.product3 .season_tag3 {
+  position: absolute;
+  top: -33px;
+  left: 121px;
+  z-index: 1;
+}
+
+.product3::after {
+  display: block;
+  content: "";
+  clear: both;
 }
 
 /*section 2*/
@@ -286,7 +304,6 @@ img.notice_img {
   width: 1280px;
   height: 241px;
   z-index: 1000;
-  /*background-color:#000;*/
 }
 
 .reward_img_wrap {
@@ -345,23 +362,42 @@ img.notice_img {
   position: relative;
   width: 100%;
   height: 517px;
+  background: url(../images/img/main/17winter1/winter_coffee_bg.jpg);
+  background-size: contain;
 }
 
-.chreistmas_wrap>img {
-  width: 100%;
+.chreistmas_wrap {
+  height: inherit;
+  width: 1280px;
+  margin: auto;
+}
+
+.christmas_left {
+  position: relative;
+  height: inherit;
+  width: 50%;
+  float: left;
+}
+
+.christmas_right {
+  position: relative;
+  height: inherit;
+  width: 50%;
+  left: 81px;
+  top: 28%;
+  float: right;
+}
+
+.christmas_right::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .christmas_left>img {
   position: absolute;
   left: 21%;
-  top: 39px;
-}
-
-.christmas_right {
-  position: absolute;
-  width: 100px;
-  right: 39%;
-  top: 30%;
+  top: 9px;
 }
 
 .christmas_right1 img {
@@ -392,20 +428,17 @@ img.notice_img {
 /*section 5*/
 
 .section_5 {
-  position: relative;
   width: 100%;
   height: 358px;
-  background: #00b050;
+  background: url(../images/img/main/black_reserve_bg2.jpg) no-repeat;
 }
 
-.reserved_wrap>img {
-  width: 100%;
-}
-
-.reserved_icon {
-  position: absolute;
-  top: 27%;
-  left: 19%;
+.reserved_wrap {
+  position: relative;
+  margin: auto;
+  width: 1280px;
+  height: 538px;
+  /*background: #000;*/
 }
 
 .reserved_center {
@@ -415,96 +448,99 @@ img.notice_img {
   width: 543px;
 }
 
-.reserved_center ul {}
-
-.reserved_center ul li {}
-
-.reserved_center ul li>img {}
-
-.reserved_center ul li>a>span {
-  display: block;
-  margin-left: 10px;
-  width: 120px;
-  height: 34px;
-  line-height: 34px;
-  border: 2px solid #d5b192;
-  border-radius: 3px;
-  text-align: center;
-  color: #d5b192;
-  transition: 0.5s;
+.reserved_center .coffee_logo {
+  position: absolute;
+  left: -410px;
+  top: -38px;
 }
 
-.reserved_center ul li>a>span:hover {
+.reserved_center>a {
+  position: absolute;
+  top: -60px;
+  left: -150px;
+  display: block;
+  background: url(../images/img/main/black_reserve_txt2.png) no-repeat;
+  height: 100px;
+  width: 430px;
+  padding-top: 180px;
   color: #fff;
-  background-color: #d5b192;
 }
 
 .reserved_products {
   position: absolute;
-  right: 14%;
-  top: -1%;
+  right: 0px;
+  top: -22px;
+}
+
+.reserved_center>a>span {
+  position: absolute;
+  width: 120px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 2px solid #d9aa8a;
+  border-radius: 3px;
+  color: #d9aa8a;
+  transition: 0.3s;
+}
+
+.reserved_center>a>span:hover {
+  color: #fff;
+  background-color: #d9aa8a;
 }
 
 /*section 6*/
 
 .section_6 {
-  position: relative;
   width: 100%;
   height: 755px;
+  background: url(../images/img/main/fav_prod_bg_new.jpg) fixed no-repeat top;
 }
 
-.pick_your_favorit_wrap {
-  width: 100%;
+.favorit_wrap {
+  position: relative;
+  margin: auto;
+  width: 1280px;
   height: 800px;
-  background: url(../images/img/main/fav_prod_bg_new.jpg) fixed no-repeat left top;
+  /*background: #000;*/
 }
 
-.pick_your_favorit_left .pick_title {
-  position: absolute;
-  top: 15%;
-  left: 23%
-}
-
-.pick_your_favorit_left .pick_title ul li {
-  display: block;
+.favorit_left {
+  position:relative;
+  height: inherit;
   text-align: right;
+  width: 40%;
+  left: 0px;
+  box-sizing: border-box;
+  padding-top: 100px;
 }
-
-.pick_your_favorit_left .pick_title ul li a:first-child img {
-  margin-bottom: 40px;
+.favorit_left a {
+ position: absolute;
+ width:120px;
+ height: 36px;
+ display: block;
+ margin-top:20px;
+ right:0;
 }
-
-.pick_your_favorit_left .pick_title ul li a span {
+.favorit_left a span {
+  position: absolute;
   display: block;
-  width: 120px;
-  height: 34px;
-  float: right;
-  margin-right: 10px;
-  line-height: 34px;
-  color: #fff;
-  text-align: center;
+  width: inherit;
+  height: 36px;
+  line-height: 36px;
   border: 2px solid #fff;
   border-radius: 3px;
-  transition: 0.5s;
+  text-align: center;
+  margin-right:10px;
+  color: #fff;
 }
 
-.pick_your_favorit_left .pick_title ul li a span:after {
-  content: "";
-  display: block;
-  height: 0;
-  width: 0;
-  display: none;
-}
-
-.pick_your_favorit_left .pick_title ul li a span:hover {
-  color: #000;
-  background-color: #fff;
-}
-
-.pick_your_favorit_right {
-  position: absolute;
-  top: 11%;
-  right: 10%;
+.favorit_right {
+  position:absolute;
+  width: 60%;
+  height: inherit;
+  top: 90px;
+  right: -111px;
 }
 
 /*section 7*/
