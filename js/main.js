@@ -28,13 +28,11 @@ function section_1(){
 }
 
 function section_2(){
-$(this).removeClass('active');
+     $(this).removeClass('active');
     $('.notice').click(function(){
         $('.promotion_slide').stop().slideToggle();
         $(this).toggleClass('active');
-
         return false;
-
     })
 }
 

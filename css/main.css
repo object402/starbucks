@@ -207,17 +207,16 @@ img.notice_img {
   display: block;
   right: 48%;
   top: 21%;
-  width:36px;
-  height:36px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background-color: #fff;
-  background:url(../images/img/common/btn_prom_down.png) no-repeat;
-}
-.active{
-    background:url(../images/img/common/btn_prom_up.png) no-repeat;
+  background: url(../images/img/common/btn_prom_down.png) no-repeat;
 }
 
-
+.active {
+  background: url(../images/img/common/btn_prom_up.png) no-repeat;
+}
 
 /* hidden slide */
 
@@ -225,15 +224,16 @@ img.notice_img {
   width: 100%;
   height: 658px;
   background-color: #f6f5ef;
+  display: none;
 }
 
 .promotion_view {
   position: relative;
-  top:9%;
+  top: 9%;
   width: 100%;
   height: 600px;
   background-color: red;
-  odverflow:hidden;
+  odverflow: hidden;
 }
 
 .promotion_view .promotion_container {
@@ -264,35 +264,80 @@ img.notice_img {
 }
 
 .reward_wrap {
+  position: relative;
   width: 100%;
   height: inherit;
 }
 
+/* left */
+
 .reward_left {
-  float: left;
-  width: 39%;
+  position: absolute;
+  width: 50%;
+  height: 241px;
   background-color: #272727;
 }
 
-.reward_left img {
-  z-index: 100;
-  margin-left: 150px;
-  width: 350px;
+/* center */
+
+.reward_center {
+  position: relative;
+  margin: auto;
+  width: 1280px;
   height: 241px;
+  z-index: 1000;
+  /*background-color:#000;*/
 }
+
+.reward_img_wrap {
+  position: absolute;
+  height: 241px;
+  width: 260px;
+  left: 0%;
+  top: 0%;
+  background: url(../images/img/main/reward_star_bg_m.png) no-repeat center;
+  background-position: top left 15px;
+  z-index: 2;
+  padding-right: 200px;
+}
+
+.reward_img_wrap .reward_bg {
+  position: absolute;
+  top: 100px;
+  height: 241px;
+  z-index: 100;
+}
+
+.reward_img_wrap .logo {
+  position: absolute;
+  left: 18%;
+  top: 45%;
+  z-index: 1000;
+}
+
+.reward_txt_bg {
+  position: absolute;
+  left: 12%;
+  top: 0%;
+  z-index: 1;
+}
+
+/* right */
 
 .reward_right {
-  float: right;
-  width: 50%:
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 241px;
+  background-color: #d6c798;
 }
 
-.reward_right:after {
+/*.reward_right::after{
+  clear:both;
   content: "";
-  display: block;
-  height: 0;
-  width: 0;
-  display: none;
-}
+  display:block;
+}*/
 
 /*section 4*/
 
