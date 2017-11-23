@@ -49,11 +49,11 @@ $(document).ready(function() {
   })
 
 
-//그래프 스크립트
+  //그래프 스크립트
   var graph = $('.graph-stick > div > span');
   //기본으로 display-none
   graph.parent().hide();
-  
+
   $(window).scroll(function() {
     var sc = $(this).scrollTop();
     console.log(sc);
