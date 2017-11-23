@@ -48,43 +48,24 @@ $(document).ready(function() {
     return false;
   })
 
+
+//그래프 스크립트
   var graph = $('.graph-stick > div > span');
+  //기본으로 display-none
   graph.parent().hide();
-
-
+  
   $(window).scroll(function() {
     var sc = $(this).scrollTop();
     console.log(sc);
     if (sc > 700) {
-      graph.eq(0).css({
-        height: 52
-      }).parent().show(500);
-      graph.eq(1).css({
-        height: 145
-      }).parent().delay(500).show(500);
-      graph.eq(2).css({
-        height: 149
-      }).parent().delay(1000).show(500);
-      graph.eq(3).css({
-        height: 151
-      }).parent().delay(1500).show(500);
-      graph.eq(4).css({
-        height: 153
-      }).parent().delay(2000).show(500);
-      graph.eq(5).css({
-        height: 157
-      }).parent().delay(2500).show(500);
-      graph.eq(6).css({
-        height: 178
-      }).parent().delay(3000).show(500);
-      graph.eq(7).css({
-        height: 209
-      }).parent().delay(3500).show(500);
-      graph.eq(8).css({
-        height: 204
-      }).parent().delay(4000).show(500);
-
-
+      for (var i = 0; i < 9; i++) {
+        //각 그래프의 높이 구하기
+        var gHeight = graph.eq(i).height();
+        // console.log(height);
+        graph.eq(i).css({
+          height: gHeight
+        }).parent().delay(i * 500).show(500);
+      }
     }
   })
 
