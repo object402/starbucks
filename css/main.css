@@ -514,13 +514,16 @@ img.notice_img {
   box-sizing: border-box;
   padding-top: 100px;
 }
+.favorit_left img {
+    margin-bottom:40px;
+}
 .favorit_left a {
  position: absolute;
  width:120px;
  height: 36px;
  display: block;
  margin-top:20px;
- right:0;
+ right:10px;
 }
 .favorit_left a span {
   position: absolute;
