@@ -5,13 +5,15 @@ body {
   font-family: '나눔고딕', sans-serif;
 }
 div{box-sizing: border-box;}
+header{
+  background-color: #F6F5EF;
 
+}
+#header_background{}
 #header_wrapper{
   width: 1200px;
   height: 120px;
   margin: auto;
-  background-color: rgb(233, 145, 179);
-  position: relative;
 }
 
 .logo{
@@ -33,15 +35,8 @@ div{box-sizing: border-box;}
   display: inline-block;
   float: right;
   margin-right: 100px;
-
-
-  /*position: absolute;
-  height: 20px;
-  width: 464px;
-  right:93px;
-  top:15px;*/
-
 }
+
 .wrap_topNav .topNav{}
 .wrap_topNav .topNav ul{
   margin-top: 8px;
@@ -49,6 +44,10 @@ div{box-sizing: border-box;}
 .wrap_topNav .topNav ul li{
   display: inline-block;
   margin: 10px 15px;
+}
+.wrap_topNav .topNav ul li a{
+  font-size: 13px;
+  color: #555;
 }
 .wrap_topNav .topNav ul li::after{
   content: "";
@@ -65,20 +64,19 @@ div{box-sizing: border-box;}
     border: 1px solid #ccc;
     border-radius: 5px;
     top: 9px;
-    right: 54px;
+    right: 325px;
 }
 .wrap_topNav .topNav ul + span>a{
   display: inline-block;
-  margin: 0 auto;
+  text-align: center;
   line-height: 30px;
   vertical-align: middle;
   height: 34px;
   width: 34px;
-/*
   position: absolute;
   right:0;
   top:0;
-*/
+
 }
   .wrap_topNav .topNav ul + span>a>img{
     display: inline-block;
@@ -96,4 +94,77 @@ div{box-sizing: border-box;}
 .wrap_mainNav>ul>li{
   display: inline-block;
   margin: 0 15px;
+}
+.wrap_mainNav>ul>li>a{
+  font-size: 13px;
+  color: #333;
+}
+.wrap_mainNav>ul>li>a:hover{
+  font-size: 13px;
+  color: #669900;
+  background-color: #2c2a29;
+}
+/*.wrap_mainNav>ul>li:hover .wrap_subNav{
+  display: block;
+  opacity: 1;
+}*/
+
+.wrap_subNav{
+  background-color: #2C2A29;
+  position: absolute;
+  width: 100%;
+  top:120px;
+  left: 0;
+}
+
+.subNav01{
+  overflow: hidden;
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+.subNav01::after{
+  clear: both;
+}
+.subNav01>ul{
+  /*display: inline-block;*/
+  display: block;
+  width: 220px;
+  height: auto;
+  padding: 10px;
+  float: left;
+}
+
+.subNav01>ul>li:first-child{
+  padding: 15px 0;
+}
+.subNav01>ul>li:first-child a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.subNav01>ul>li{
+  padding: 3px 0 3px 0;
+}
+.subNav01>ul>li>a{
+  color: #999;
+  font-size: 12px;
+}
+.subNav01>ul>li>a:hover{
+  text-decoration: underline;
+}
+.subNav01 .clear{
+  clear: both;
+  margin-bottom: 10px;
+}
+.subNav02{
+  background-color: rgb(204, 227, 155);
+  width: 100%;
+}
+.width_subNav02{
+  width: 1200px;
+  margin: auto;
+}
+.width_subNav02 p{
+  padding: 3px;
 }
