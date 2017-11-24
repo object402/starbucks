@@ -1,8 +1,8 @@
 $(function(){
   $('.wrap_subNav').hide();
 
-  $('.wrap_mainNav>ul>li>a').on('hover',function(){
-    $(this).next().stop().slideToggle();
+  $('.wrap_mainNav>ul>li').on('hover',function(){
+    $(this).children('.wrap_subNav').stop(true, true).slideToggle();
   });
 
   var topNavW = $('.topNav ul').width();
