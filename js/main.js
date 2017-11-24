@@ -3,11 +3,12 @@ $(function(){
   // animation
   section_1();
   section_2();
+  promotion();
   // section_3();
   section_4();
   section_5();
   section_6()
-  // section_7();
+  section_7();
   section_8();
 })
 
@@ -23,7 +24,7 @@ function section_1(){
 
   $('.givegood img').css({"opacity":'0'}).delay(1700).animate({"opacity":'1'},'slow');
 
-  $('.givegood a span').css({"opacity":'0',"transition":'0s'}).delay(1700).animate({"opacity":'1',"transition":'0.5s'},'slow');
+  $('.main_left').css({"opacity":'0',"transition":'0s'}).delay(1700).animate({"opacity":'1',"transition":'0.5s'},'slow');
 
 }
 
@@ -34,6 +35,22 @@ function section_2(){
         $(this).toggleClass('active');
         return false;
     })
+}
+
+// promotino slide
+
+function promotion(){
+
+    var i=0;
+    setInterval(function(){
+        i++
+      $('.promotion_container').delay(1000).animate({left:-(819*i)},500);
+      if(i==4){
+        $('.promotion_container').delay(1000).animate({left:0*i},500);
+        i=0;
+      }
+    })
+
 }
 
 function section_4(){
@@ -73,12 +90,11 @@ function section_6(){
     var pos = $('.section_6').offset().top;
     var top = $(window).scrollTop();
     if(pos>=top+1600){
-  $('.pick_title').css({"opacity":'0',"left":'-100px'}).delay(4000).animate({"opacity":'1',"left":'23%'},1500);
+  $('.favorit_left').css({"opacity":'0',"left":'-100px'}).delay(2500).animate({"opacity":'1',"left":'0'},1500);
     }
   })
 
 }
-
 
 function section_8(){
   $(window).scroll(function(){
@@ -86,9 +102,9 @@ function section_8(){
     var top = $(window).scrollTop();
     if(pos>=top+1800){
           console.log(top);
-        $('.store_find_left img').css({"opacity":'0'}).delay(4000).animate({"opacity":'1'},2000);
+        $('.store_left').css({"opacity":'0'}).delay(4000).animate({"opacity":'1'},2000);
 
-          $('.store_find_right').css({"opacity":'0',"right":'0px'}).delay(4000).animate({"opacity":'1',"right":'21%'},2000);
+          $('.store_right').css({"opacity":'0',"right":'-100px'}).delay(4000).animate({"opacity":'1',"right":'0'},2000);
     }
   })
 

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <script src="./js/jquery-3.2.1.min.js"></script>
-  <!-- <script src="./js/main.js"></script> -->
+  <script src="./js/main.js"></script>
   <title>starbucks main</title>
 </head>
 
@@ -51,6 +51,7 @@
             <img src="./images/img/main/17winter1/bev2_txt.png" alt="toffee_nut_crunch" class="season_tag3">
           </div>
         </div>
+      </div>
     </section>
 
     <!-- notice line -->
@@ -108,13 +109,14 @@
             <li><a href="#"><img src="./images/image.star/common_img/upload_banner/WU5gFK_20171106180740041.jpg" alt=""><span>자세히보기</span></a></li>
             <li><a href="#"><img src="./images/image.star/common_img/upload_banner/9QJ750_20171025143835760.jpg" alt=""><span>자세히보기</span></a></li>
             <li><a href="#"><img src="./images/image.star/common_img/upload_banner/i1PFRt_20161230163023435.jpg" alt=""><span>자세히보기</span></a></li>
+
           </ul>
         </div>
       </div>
       <!-- slide button -->
-      <!-- <div class="promotion_slide_button">
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
+      <div class="promotion_slide_button">
+        <a href=""></a>
+        <a href=""></a>
       </div>
       <div class="promotion_dot_button">
         <ul>
@@ -126,7 +128,7 @@
           <li><a href=""><img src="" alt=""></a></li>
           <li><a href=""><img src="" alt=""></a></li>
         </ul>
-      </div> -->
+      </div>
       <!-- dot_btton end -->
     </section>
 
@@ -144,16 +146,17 @@
           </div>
           <div class="reward_txt_bg">
             <img src="./images/img/main/reward_texbg.jpg" alt="">
+            <div class="reward_txt">
+              <img src="./images/image.star/common_img/main/reward_txt.png" alt="reward_top">
+              <img src="./images/image.star/common_img/main/egiftCard_txt.png" alt="reward_bottom">
+            </div>
+            <ul>
+              <li class="li_1"><a href="#"><span>회원가입</span></a></li>
+              <li class="li_2"><a href="#"><span>로그인</span></a></li>
+              <li class="last_li"><a href="#"><span>e-Gift Card 선물하기</span></a></li>
+            </ul>
           </div>
-          <ul>
-            <li><a href="#"><img src="" alt="reward_top"></a></li>
-            <li><a href="#"><img src="" alt="reward_bottom"></a></li>
-          </ul>
-          <ul>
-            <li><a href="#"><span>회원가입</span></a></li>
-            <li><a href="#"><span>로그인</span></a></li>
-            <li><a href="#"><span>e-Gift Card 선물하기</span></a></li>
-          </ul>
+
         </div>
         <!-- reward center end -->
         <div class="reward_right">
@@ -216,15 +219,20 @@
     </section>
     <!-- reserved store -->
     <section class="section_7">
-      <div class="reserved_store_wrap">
-        <!-- bg img -->
-        <!-- <img src="./images/img/main/reserve_bg.jpg" alt=""> -->
-        <img src="" alt="reserved_store">
-        <div class="reserved_move">
-          <a href="#" class="front"><img src="./images/img/main/reserve_medal01.png" alt="front"></a>
-          <a href="#" class="back"><img src="./images/img/main/reserve_medal02.png" alt="back"></a>
+      <!-- flip -->
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <span class="name"></span>
+          </div>
+          <div class="back">
+            <a href="">자세히보기</a>
+            <div class="back-logo">
+
+            </div>
+          </div>
         </div>
-      </div>
+        <!--  -->
     </section>
     <!-- store find -->
     <section class="section_8">
@@ -234,18 +242,21 @@
           <img src="./images/img/main/store_exp_img02.png" alt="sotre_img">
         </div>
 
-        <div class="store_right">
-                    <img src="./images/img/main/store_txt01.png" alt="">
-          <img src="./images/img/main/store_txt02.png" alt="">
+        <div class="store_right_wrap">
+          <div class="store_right">
+            <img src="./images/img/main/store_txt01.png" alt="">
+            <img src="./images/img/main/store_txt02.png" alt="">
+            <a href=""><span>매장찾기</span></a>
+          </div>
+          <div class="ilustration_store">
+            <!-- <img src="./images/img/main/store_exp_img04.png" alt="ilustration"> -->
+          </div>
+        </div>
 
-          <a href=""><a href=""><span>매장찾기</span></a>
-        </div>
-        <div class="ilustration_store">
-          <img src="./images/img/main/store_exp_img04.png" alt="ilustration">
-        </div>
       </div>
+
     </section>
-    </div>
+
 </body>
 
 </html>
