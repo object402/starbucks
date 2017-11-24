@@ -186,12 +186,14 @@ header{
   border: 1px solid red;
   display: inline-block;
 }
-
+/*contents*/
+#contents{
+  margin-top: 120px;
+}
 /*footer*/
 #footer_wrapper{
   background-color: #2C2A29;
   height: 550px;
-  margin-top: 120px;
 }
 .footer_width{
   width: 1200px;
@@ -269,6 +271,9 @@ margin: 4px 0;
   line-height: 30px;
   margin: 12px 1px;
   border-radius: 2px
+}
+.copyright_box a:hover{
+  text-decoration: underline;
 }
 .footer_info ul{}
 .footer_info ul li{
