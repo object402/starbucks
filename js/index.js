@@ -6,6 +6,5 @@ $(function(){
   });
 
   var topNavW = $('.topNav ul').width();
-  $('.search').css('margin-left',topNavW);
-  console.log(topNavW);
+  $('.search').css('margin-left',topNavW-1);
 });
