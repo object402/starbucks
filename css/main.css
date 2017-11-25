@@ -252,40 +252,43 @@ img.notice_img {
   width: 100%;
   height: 600px;
   background-color: red;
-  odverflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .promotion_view .promotion_container {
   position: absolute;
+  display: block;
   width: 4996px;
   height: 553px;
   background: blue;
-}
-.promotion_view .promotion_container ul{
   margin-left:-408px;
 }
-.promotion_view .promotion_container ul li {
+
+.promotion_view .promotion_container li {
   display: block;
   float: left;
   width: 819px;
   margin-left: 10px;
 }
 
-.promotion_view .promotion_container ul li a img {
+.promotion_view .promotion_container li a img {
   display: block;
   float: left;
   margin-left: 10px;
 }
 
-.promotion_view .promotion_container ul li span{
+.promotion_view .promotion_container li span{
   display: inline-block;
+  position: absolute;
   text-align: center;
-  width:120px;
-  height:36px;
-  line-height:36px;
+  width: 120px;
+  margin-left: -460px;
+  bottom: 14px;
+  height: 36px;
+  line-height: 36px;
   border: 2px solid black;
   border-radius: 3px;
-  color:#000;
+  color: #000;
 }
 
 /* slide button */
@@ -325,6 +328,37 @@ img.notice_img {
 .promotion_slide_button a:last-child:hover{
   background-color: #fff;
 }
+
+.promotion_dot_button {
+  position: absolute;
+  left:700px;
+  bottom:32px;
+  width:313px;
+  height:20px;
+  /*background:black;*/
+}
+.promotion_dot_button ul li{
+  /*display: block;
+  flot:left;*/
+}
+.promotion_dot_button ul li a{
+  display: block;
+  float: left;
+  margin-left:15px;
+  background:lightgray;
+  border-radius:50%;
+  width:15px;
+  height:15px;
+}
+/* button click add */
+.add{
+  width:15px;
+  height:15px;
+  border: 2px solid #00b050;
+  border-radius: 50%;
+  background: #fff;
+}
+
 
 /*section 3*/
 
