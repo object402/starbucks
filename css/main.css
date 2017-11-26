@@ -177,6 +177,7 @@
   height: 64px;
   left: 412px;
   font-size: 14px;
+  z-index:1100;
 }
 
 .rolling li {
