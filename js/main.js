@@ -2,6 +2,7 @@ $(function() {
   // animation
   section_1();
   section_2();
+  noticeSlide();
   promotion();
   // section_3();
   section_4();
@@ -56,7 +57,29 @@ function section_2() {
     $(this).toggleClass('active');
     return false;
   })
+
 }
+
+function noticeSlide(){
+var height =  $(".left_notice").height();
+var num = $(".rolling li").length;
+var max = height * num;
+var move = 0;
+function noticeRolling(){
+ move += height;
+ $(".rolling").stop().animate({"top":-move},600,function(){
+   if( move >= max ){
+     $(this).css("top",0);
+     move = 0;
+   };
+ });
+};
+setInterval(noticeRolling,3000);
+$(".rolling").append($(".rolling li").first().clone());
+ }
+
+
+
 
 //promotino slide
 
