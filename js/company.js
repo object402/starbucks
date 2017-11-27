@@ -7,8 +7,8 @@ $(document).ready(function() {
   var li_width = $('.company-slider-view > li:first').width();
   var total = $('.company-slider-view > li').length;
 
-  // 복제하는 변수 만들기 
-  var copyObj = $('li:lt(' + show_num + ')').clone();
+  // 복제하는 변수 만들기
+  var copyObj = $('.company-slider-view li:lt(' + show_num + ')').clone();
   list.append(copyObj);
 
   //next 버튼 클릭하면 왼쪽으로 슬라이드하기
