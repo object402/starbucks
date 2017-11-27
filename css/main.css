@@ -9,7 +9,7 @@
 .e_frequency {
   position: fixed;
   z-index: 9999;
-  top: 140px;
+  top: 20px;
   right: 20%;
   /*display: none;*/
 }
@@ -158,9 +158,26 @@
 
 /*left*/
 
+.notice_left_bg{
+  position: absolute;
+  left:0;
+  background-color:black;
+  width:400px;
+  height:64px;
+}
+.notice_right_bg{
+  position: absolute;
+  right:0;
+  background-color:#f6f5ef;
+  width:400px;
+  height:64px;
+}
+
+
 .left_notice {
+  position: absolute;
   overflow: hidden;
-  width:1000px;
+  width:60%;
   height: 64px;
   background: #000;
 }
@@ -197,13 +214,13 @@
 
 img.notice_img {
   position: absolute;
-  left: 19%;
   top: 36%;
+  left:28%;
 }
 
 .notice_plus {
   position: absolute;
-  right: 2%;
+  right:11%;
   top: 21%;
 }
 
@@ -227,7 +244,7 @@ img.notice_img {
 
 .right_notice .promotion_txt {
   top: 33%;
-  left: 17%;
+  right: 62%;
   width: 127px;
   height: 19px;
   position: absolute;
@@ -236,7 +253,7 @@ img.notice_img {
 .notice {
   position: absolute;
   display: block;
-  right: 48%;
+  right:48%;
   top: 21%;
   width: 36px;
   height: 36px;
@@ -248,56 +265,78 @@ img.notice_img {
 .active {
   background: url(../images/img/common/btn_prom_up.png) no-repeat;
 }
-
 /* hidden slide */
 
 .promotion_slide {
   position: relative;
   width: 100%;
-  height: 658px;
+  /*height: 700px;*/
   background-color: #f6f5ef;
-  /*display: none;*/
+  display: none;
 }
-
-.promotion_view {
-  position: relative;
-  top: 6%;
-  width: 100%;
-  height: 600px;
-  /*background-color: red;*/
-  overflow: hidden;
+div.bxslider {
+    margin-left: 25%;
+    margin-right: 25%;
 }
-
-.promotion_view .promotion_container {
-  position: absolute;
-  display: block;
-  width: 4996px;
-  height: 553px;
-  /*background: blue;*/
-  margin-left: -408px;
-}
-
-.promotion_view .promotion_container li {
-  display: block;
-  float: left;
-  width: 819px;
+div.slide{
   opacity: 0.5;
 }
-.active_promotion {
+
+.active_opacity {
   opacity: 1 !important;
 }
 
-.promotion_view .promotion_container li a img {
+.promotion_view .bxslider .slide a img {
   display: block;
   float: left;
+  width:100%;
 }
 
-.promotion_view .promotion_container li span {
+.bx-next {
+  color:rgba(255,255,255,0.0);
+  display: block;
+  width: 55px;
+  height: 55px;
+  float: right;
+  border: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: url(../images/img/common/arrow_right_on.png) no-repeat center;
+  transition: 0.2s;
+}
+.bx-next:hover {
+  background-color: #fff;
+}
+.bx-prev {
+  color:rgba(255,255,255,0.0);
+  display: block;
+  width: 55px;
+  height: 55px;
+  float: left;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: url(../images/img/common/arrow_left_on.png) no-repeat center;
+  transition: 0.2s;
+}
+.bx-prev:hover {
+  background-color: #fff;
+}
+.bx-controls-direction {
+    width: 60%;
+    height: 80px;
+    position: absolute;
+    bottom: 233px;
+    /* background: green; */
+    left: 20%;
+    top:45%;
+}
+
+.promotion_view .bxslider .slide span {
   display: inline-block;
   position: absolute;
   text-align: center;
   width: 120px;
-  margin-left: -460px;
+  left:41.5%;
   bottom: 14px;
   height: 36px;
   line-height: 36px;
@@ -306,13 +345,13 @@ img.notice_img {
   color: #000;
 }
 
-/* slide button */
-
-.promotion_dot_button {
-  display: block;
-  position: absolute;
-  bottom: -30px;
-  left: 310px;
+/* slide dot button */
+.promotion_dot_button{
+  margin:auto;
+  margin-top: 20px;
+  padding-bottom:20px;
+  width: 162px;
+  height: 20px;
 }
 
 .promotion_dot_button span {
@@ -378,16 +417,6 @@ span.active-page {
   background-color: #fff;
 }
 
-.promotion_dot_button {
-  position: absolute;
-  left: 54%;
-  top: 94%;
-  transform: translate(-54%,-50%);
-  bottom: 32px;
-  width: 313px;
-  height: 20px;
-  /* background: black; */
-}
 
 .promotion_dot_button ul li {
   /*display: block;
@@ -874,7 +903,7 @@ span.active-page {
   background: #000;
 }
 
-/*.front .name {
+.front .name {
   font-size: 2em;
   display: inline-block;
   background: rgba(33, 33, 33, 0.9);
@@ -890,7 +919,7 @@ span.active-page {
   -moz-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
   transform: rotate(-20deg);
-}*/
+}
 
 .back-logo {
   position: absolute;
