@@ -156,26 +156,43 @@
   height: 62px;
 }
 
+.line_notice_wrap{
+  position: relative;
+  width:1200px;
+  height:64px;
+  margin:auto;
+}
+
 /*left*/
 
+.notice_left_bg{
+  position: absolute;
+  left:0;
+  background-color:black;
+  width:400px;
+  height:64px;
+}
+.notice_right_bg{
+  position: absolute;
+  right:0;
+  background-color:#f6f5ef;
+  width:400px;
+  height:64px;
+}
+
 .left_notice {
+  position: absolute;
   overflow: hidden;
-  width:1000px;
+  width:60%;
   height: 64px;
   background: #000;
 }
 
-/*.left_notice dl {
-
-  line-height: 24px;
-
-}*/
-
 .rolling {
   position: relative;
-  width: 900px;
+  width: 90%;
   height: 64px;
-  left: 412px;
+  left: 88px;
   font-size: 14px;
   z-index:1100;
 }
@@ -183,7 +200,7 @@
 .rolling li {
   height: 64px;
   line-height: 64px;
-  width: 900;
+  width:inherit;
 }
 
 .left_notice .rolling li a{
@@ -197,13 +214,12 @@
 
 img.notice_img {
   position: absolute;
-  left: 19%;
   top: 36%;
 }
 
 .notice_plus {
   position: absolute;
-  right: 2%;
+  right:11%;
   top: 21%;
 }
 
@@ -220,14 +236,14 @@ img.notice_img {
   position: absolute;
   left: 56%;
   top: 0%;
-  width: 44%;
+  width:44%;
   height: 62px;
   background-color: #f6f5ef;
 }
 
 .right_notice .promotion_txt {
   top: 33%;
-  left: 17%;
+  right: 22%;
   width: 127px;
   height: 19px;
   position: absolute;
@@ -236,7 +252,7 @@ img.notice_img {
 .notice {
   position: absolute;
   display: block;
-  right: 48%;
+  right:5%;
   top: 21%;
   width: 36px;
   height: 36px;
