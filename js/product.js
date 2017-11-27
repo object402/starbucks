@@ -29,11 +29,7 @@ $(document).ready(function(){
   });
 
  // 3-1 메뉴 list img 호버 시 이미지 사이즈 업 CSS로 대체
-  $(".product_item_list_photo li img").hover(function(){
-    $(this).animate({width:280},1000);
-  },function(){
-    $(this).animate({width:260},1000);
-  })
+
 
   // 2-2 카테고리 체크박스 체크시 해당 메뉴 보이기
   $(".dt1_category_wrap_ul li input").each(function(i) {
