@@ -87,60 +87,52 @@ function noticeSlide() {
 //promotino slide
 
 function promotion() {
+    var list = $('.promotion_container');
+    var show_num = 1;
+    var num = 0;
+    var li_width = $('.promotion_container > li:first').width();
+    var total = $('.promotion_container > li').length;
 
-  var i=0;
-  setInterval(function(){
-      i++
-    $('.promotion_container').delay(1000).animate({left:-(819*i)},1000);
-    if(i==4){
-      $('.promotion_container').delay(1000).animate({left:0*i},1000);
-      i=0;
-    }
-  })
+    // 복제하는 변수 만들기
+    var copyObj = $('li:lt(' + show_num + ')').clone();
+    list.append(copyObj);
 
-  var slide_list = $('.promotion_container');
-  var slide_first_img1 = $('.promotion_container li:first-child').clone();
-  var index = $('.promotion_container li').index();
-
-
-  var slide_img2 = $('.promotion_container li:nth-child(2)').clone();
-
-  // slide_list.prepend(slide_first_img1);
-  // slide_list.append(slide_img2);
-
-  var i = 0;
-
-
-  $('.button_right').click(function() {
-
-    i++;
-    $('.promotion_container').stop().animate({
-      left: '-' + (819 * i)
-    }, 500);
-    if (i > 4) {
-      i = 0;
-      $('.promotion_container').stop().animate({
-        left: (819 * i)
+    //next 버튼 클릭하면 왼쪽으로 슬라이드하기
+    $('.button_right').on('click', function() {
+      if (num == total) {
+        num = 0;
+        list.css('margin-left', 0);
+      }
+      num++;
+      list.stop().animate({
+        marginLeft: -li_width * num
       }, 500);
-    }
-    return false;
-  })
 
-  $('.button_left').click(function() {
-    i--;
-    console.log(i);
-    $('.promotion_container').stop().animate({
-      left: '-' + (819 * i)
-    }, 500);
-    if (i < -4) {
-      i = 0;
-      $('.promotion_container').stop().animate({
-        left: (819 * i)
+      $('.promotion_dot_button span').removeClass('active-page');
+      $('.promotion_dot_button span').eq(num).addClass('active-page');
+      if (num == total) {
+        $('.promotion_dot_button span').eq(0).addClass('active-page');
+      }
+      return false;
+    })
+
+    //prev 버튼 클릭하면 오른쪽으로 슬라이드하기
+    $('.button_left').on('click', function() {
+      if (num == 0) {
+        num = total;
+        list.css('margin-left', -li_width * num);
+      }
+      num--;
+      list.stop().animate({
+        marginLeft: -li_width * num
       }, 500);
-    }
-    return false;
-  })
-
+      $('.pagnaition span').removeClass('active-page');
+      $('.pagnaition span').eq(num).addClass('active-page');
+      if (num == total) {
+        $('.pagnaition span').eq(0).addClass('active-page');
+      }
+      return false;
+    })
 }
 
 function section_4() {
