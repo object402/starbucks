@@ -60,7 +60,6 @@ function section_2() {
 
 }
 
-<<<<<<< HEAD
 function noticeSlide(){
 var height =  $(".left_notice").height();
 var num = $(".rolling li").length;
@@ -78,7 +77,7 @@ function noticeRolling(){
 setInterval(noticeRolling,3000);
 $(".rolling").append($(".rolling li").first().clone());
  }
-=======
+
 function noticeSlide() {
   var height = $(".left_notice").height();
   var num = $(".rolling li").length;
@@ -99,7 +98,7 @@ function noticeSlide() {
   setInterval(noticeRolling, 3000);
   $(".rolling").append($(".rolling li").first().clone());
 }
->>>>>>> 0b213352b7d47ad74119435abf5c26d5a3a35b84
+
 
 
 
