@@ -60,23 +60,26 @@ function section_2() {
 
 }
 
-function noticeSlide(){
-var height =  $(".left_notice").height();
-var num = $(".rolling li").length;
-var max = height * num;
-var move = 0;
-function noticeRolling(){
- move += height;
- $(".rolling").stop().animate({"top":-move},600,function(){
-   if( move >= max ){
-     $(this).css("top",0);
-     move = 0;
-   };
- });
-};
-setInterval(noticeRolling,3000);
-$(".rolling").append($(".rolling li").first().clone());
- }
+function noticeSlide() {
+  var height = $(".left_notice").height();
+  var num = $(".rolling li").length;
+  var max = height * num;
+  var move = 0;
+
+  function noticeRolling() {
+    move += height;
+    $(".rolling").stop().animate({
+      "top": -move
+    }, 600, function() {
+      if (move >= max) {
+        $(this).css("top", 0);
+        move = 0;
+      };
+    });
+  };
+  setInterval(noticeRolling, 3000);
+  $(".rolling").append($(".rolling li").first().clone());
+}
 
 
 
@@ -85,15 +88,15 @@ $(".rolling").append($(".rolling li").first().clone());
 
 function promotion() {
 
-  // var i=0;
-  // setInterval(function(){
-  //     i++
-  //   $('.promotion_container').delay(1000).animate({left:-(819*i)},1000);
-  //   if(i==4){
-  //     $('.promotion_container').delay(1000).animate({left:0*i},1000);
-  //     i=0;
-  //   }
-  // })
+  var i=0;
+  setInterval(function(){
+      i++
+    $('.promotion_container').delay(1000).animate({left:-(819*i)},1000);
+    if(i==4){
+      $('.promotion_container').delay(1000).animate({left:0*i},1000);
+      i=0;
+    }
+  })
 
   var slide_list = $('.promotion_container');
   var slide_first_img1 = $('.promotion_container li:first-child').clone();
@@ -109,38 +112,32 @@ function promotion() {
 
 
   $('.button_right').click(function() {
+
+    i++;
+    $('.promotion_container').stop().animate({
+      left: '-' + (819 * i)
+    }, 500);
     if (i > 4) {
       i = 0;
       $('.promotion_container').stop().animate({
         left: (819 * i)
       }, 500);
     }
-
-
-
-
-    $('.promotion_container').stop().animate({
-      left: '-' + (819 * i)
-    }, 500);
-    console.log(index,i);
-        i++;
-
     return false;
   })
 
   $('.button_left').click(function() {
+    i--;
+    console.log(i);
+    $('.promotion_container').stop().animate({
+      left: '-' + (819 * i)
+    }, 500);
     if (i < -4) {
       i = 0;
       $('.promotion_container').stop().animate({
         left: (819 * i)
       }, 500);
     }
-    i--;
-    console.log(i);
-    $('.promotion_container').stop().animate({
-      left: '-' + (819 * i)
-    }, 500);
-
     return false;
   })
 
