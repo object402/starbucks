@@ -89,6 +89,7 @@ function promotion() {
     var num = 0;
     var li_width = $('.promotion_container > li:first').width();
     var total = $('.promotion_container > li').length;
+    // var trans3d = li_width.css({'transform':'trans3d(-li_width,0,0)'});
 
     // 복제하는 변수 만들기
     var copyObj = $('li:lt(' + show_num + ')').clone();
