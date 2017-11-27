@@ -9,7 +9,7 @@
 .e_frequency {
   position: fixed;
   z-index: 9999;
-  top: 20px;
+  top: 140px;
   right: 20%;
   /*display: none;*/
 }
@@ -890,7 +890,7 @@ span.active-page {
   background: #000;
 }
 
-.front .name {
+/*.front .name {
   font-size: 2em;
   display: inline-block;
   background: rgba(33, 33, 33, 0.9);
@@ -906,7 +906,7 @@ span.active-page {
   -moz-transform: rotate(-20deg);
   -o-transform: rotate(-20deg);
   transform: rotate(-20deg);
-}
+}*/
 
 .back-logo {
   position: absolute;
