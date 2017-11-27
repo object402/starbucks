@@ -270,11 +270,11 @@ img.notice_img {
 
 .promotion_view .promotion_container {
   position: absolute;
-  left: 400px;
   display: block;
   width: 4996px;
   height: 553px;
   /*background: blue;*/
+  margin-left: -408px;
 }
 
 .promotion_view .promotion_container li {
@@ -335,17 +335,17 @@ span.active-page {
 }
 
 .button_wrap{
+  width:110px;
   
 }
 .promotion_slide_button {
-  position: relative;
-  z-index: 10000;
-  margin-left: 100px;
-  width: 800px;
+  position: absolute;
+  width: 1100px;
   height: 70px;
-  bottom: 296px;
   line-height: 70px;
-  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .promotion_slide_button a {
@@ -380,12 +380,11 @@ span.active-page {
 }
 
 .promotion_dot_button {
-
+  position: absolute;
   left: 700px;
   bottom: 32px;
-  width: 216px;
+  width: 313px;
   height: 20px;
-  margin: auto;
   /*background:black;*/
 }
 
