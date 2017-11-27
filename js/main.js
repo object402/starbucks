@@ -118,6 +118,7 @@ function promotion() {
 
     //next 버튼 클릭하면 왼쪽으로 슬라이드하기
     $('.button_right').on('click', function() {
+      console.log(li_width);
       if (num == total) {
         num = 0;
         list.css('margin-left', 0);
