@@ -264,8 +264,8 @@ img.notice_img {
   top: 6%;
   width: 100%;
   height: 600px;
-  background-color: red;
-  /*overflow: hidden;*/
+  /*background-color: red;*/
+  overflow: hidden;
 }
 
 .promotion_view .promotion_container {
@@ -273,7 +273,7 @@ img.notice_img {
   display: block;
   width: 4996px;
   height: 553px;
-  background: blue;
+  /*background: blue;*/
   margin-left: -408px;
 }
 
@@ -282,6 +282,10 @@ img.notice_img {
   float: left;
   width: 819px;
   margin-left: 10px;
+  opacity: 0.5;
+}
+.active_promotion {
+  opacity: 1 !important;
 }
 
 .promotion_view .promotion_container li a img {
@@ -305,6 +309,31 @@ img.notice_img {
 }
 
 /* slide button */
+
+.promotion_dot_button {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 310px;
+}
+
+.promotion_dot_button span {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: gray;
+  text-indent: 9999px;
+  box-sizing: border-box;
+}
+
+span.active-page {
+  background: white;
+  border: 4px solid rgb(5, 98, 46);
+}
+
 
 .promotion_slide_button {
   position: absolute;
