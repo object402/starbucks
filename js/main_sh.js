@@ -24,38 +24,49 @@ $(document).ready(function() {
 
   var num = 0;
   var total = $('.bxslider div.slide').length / 2;
-
+  var opacity = 0;
+  $('.bxslider >div').eq(3).addClass('active_opacity');
 
   $('.bx-controls-direction .bx-next').click(function() {
     num++;
-
+    opacity++;
+    console.log(opacity);
     $('.promotion_dot_button span').removeClass('active-page');
     $('.promotion_dot_button span').eq(num).addClass('active-page');
     if (num == total) {
       num = 0;
       $('.promotion_dot_button span').eq(0).addClass('active-page');
     }
-$('.bxslider div.slide').removeClass('active_opacity');
- $('.bxslider div.slide').eq(num).addClass('active_opacity');
+    $('.bxslider >div').removeClass('active_opacity');
+    $('.bxslider >div').eq(opacity + 3).addClass('active_opacity');
+    if (opacity == total) {
+      opacity = 0;
+      $('.bxslider >div').eq(3).addClass('active_opacity');
+    }
 
 
 
+  });
+
+
+  $('.bx-controls-direction .bx-prev').click(function() {
+    num--;
+    opacity--;
+
+    $('.promotion_dot_button span').removeClass('active-page');
+    $('.promotion_dot_button span').eq(num).addClass('active-page');
+    if (num == (total * -1)) {
+      num = 0;
+      $('.promotion_dot_button span').eq(0).addClass('active-page');
+    }
+
+    $('.bxslider >div').removeClass('active_opacity');
+    $('.bxslider >div').eq(opacity - 3).addClass('active_opacity');
+    if (opacity == (total * -1)) {
+      opacity = 0;
+      $('.bxslider >div').eq(3).addClass('active_opacity');
+    }
   })
-
-
-    $('.bx-controls-direction .bx-prev').click(function() {
-      num--;
-
-      $('.promotion_dot_button span').removeClass('active-page');
-      $('.promotion_dot_button span').eq(num).addClass('active-page');
-      if (num == (total*-1)) {
-        num = 0;
-        $('.promotion_dot_button span').eq(0).addClass('active-page');
-      }
-
-       $('.bxslider div.slide').removeClass('active_opacity');
-         $('.bxslider div.slide').eq(num*-1).addClass('active_opacity');
-    })
 });
 
 //product opacity animation
