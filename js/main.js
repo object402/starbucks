@@ -1,16 +1,4 @@
-$(function() {
-  // animation
-  section_1();
-  section_2();
-  noticeSlide();
 
-  // section_3();
-  section_4();
-  section_5();
-  section_6()
-  // section_7();
-  section_8();
-})
 
 $(document).ready(function() {
   $('.bxslider').bxSlider({
@@ -68,6 +56,20 @@ $(document).ready(function() {
     }
   })
 });
+
+$(function() {
+  // animation
+  section_1();
+  section_2();
+  noticeSlide();
+
+  // section_3();
+  section_4();
+  section_5();
+  section_6()
+  // section_7();
+  section_8();
+})
 
 //product opacity animation
 
