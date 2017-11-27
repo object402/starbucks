@@ -281,7 +281,6 @@ img.notice_img {
   display: block;
   float: left;
   width: 819px;
-  margin-left: 10px;
   opacity: 0.5;
 }
 .active_promotion {
@@ -291,7 +290,6 @@ img.notice_img {
 .promotion_view .promotion_container li a img {
   display: block;
   float: left;
-  margin-left: 10px;
 }
 
 .promotion_view .promotion_container li span {
@@ -335,8 +333,9 @@ span.active-page {
 }
 
 .button_wrap{
-  width:110px;
-  
+  position: relative;
+
+
 }
 .promotion_slide_button {
   position: absolute;
@@ -381,11 +380,13 @@ span.active-page {
 
 .promotion_dot_button {
   position: absolute;
-  left: 700px;
+  left: 54%;
+  top: 94%;
+  transform: translate(-54%,-50%);
   bottom: 32px;
   width: 313px;
   height: 20px;
-  /*background:black;*/
+  /* background: black; */
 }
 
 .promotion_dot_button ul li {
