@@ -337,12 +337,12 @@ span.active-page {
 
 .promotion_slide_button {
   position: absolute;
-  margin-left: 100px;
   width: 1100px;
   height: 70px;
   line-height: 70px;
-  top: 293px;
-  left: 211px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .promotion_slide_button a {
