@@ -3,7 +3,7 @@ $(function(){
 
   //네비
   $('.wrap_mainNav>ul>li').on('mouseover',function(){
-     $('.wrap_subNav').stop().slideUp();
+     //$('.wrap_subNav').stop().slideUp();
      $(this).children('.wrap_subNav').stop().slideDown();
  })
  $('.wrap_mainNav>ul>li').on('mouseleave',function(){
