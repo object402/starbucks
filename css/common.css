@@ -100,7 +100,7 @@ header{
 padding-top: 5px;
 }
 .wrap_mainNav>ul>li{
-  display: inline-block;
+  float:left;
   margin: 15px 0;
 }
 .wrap_mainNav>ul>li>a{
